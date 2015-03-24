@@ -1,0 +1,14 @@
+.vjs-counting .vjs-countdown {
+  position:absolute;
+  top:0;
+  right:0;
+  margin:auto;
+  background-color:rgba(0,0,0,0.7);
+  color:white;
+  padding: 0 10px;
+  font-size: 1.4em;
+}
+.vjs-countdown .cancel {
+  color:red;
+  cursor:pointer;
+}
