@@ -1,4 +1,8 @@
+.vjs-countdown {
+  display: none;
+}
 .vjs-counting .vjs-countdown {
+  display: block;
   position:absolute;
   top:0;
   right:0;
