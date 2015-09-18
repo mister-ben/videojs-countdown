@@ -6,7 +6,9 @@ Begins playback after a short countdown once the player is in view.
 
 ### Brightcove Player
 
-* Host the js and css on your server, or use rawgit.
+* Host the js and css on your server, or use these URLs:
+  * http://players.brightcove.net/906043040001/plugins/videojs-countdown.js
+  * http://players.brightcove.net/906043040001/plugins/videojs-countdown.css
 * In the [player studio](https://studio.brightcove.com/products/videocloud/playesr) add the URLS to the player config.
 * Add `countdown` as the plugin name, and if you want to alter the countdown, use `{"time":8}` as the plugin option.
 
@@ -35,7 +37,7 @@ object may contain any of the following properties:
 Type: `int`
 Default: 5
 
-Number of seconds to count down.
+Number of seconds to count down. 0 would autostart without countdown.
 
 #### mute
 Type: `boolean`
