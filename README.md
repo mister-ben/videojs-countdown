@@ -37,6 +37,12 @@ Default: 5
 
 Number of seconds to count down.
 
+#### mute
+Type: `boolean`
+Default: false
+
+If true, automatic playback starts muted. Leaves volume/mute state unaffected if the countdown is cancelled.
+
 ## Release History
 
  - 0.1.0: Initial release
