@@ -19,7 +19,7 @@
     var countdownOverlay;
     var countdownText;
     var isCounting = false;
-    var hadCounted = false;
+    var isDone = false;
     var timer,
     isElementInViewport,
       checkIsVisible,
@@ -117,13 +117,13 @@
 
       countdownOverlay.querySelector('.cancel').addEventListener('click', function(){
         cleanup();
-        hadCounted = true;
+        isDone = true;
       });
 
       // Cancel if playback starts
       player.on('play', function(){
+        isDone = true;
         if(isCounting) {
-          hadCounted = true;
           cleanup();
         }
       });
