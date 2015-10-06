@@ -1,6 +1,10 @@
 .vjs-countdown {
   display: none;
 }
+.vjs-countdown p,
+.vjs-countdown .vjs-control {
+  display: inline-block;
+}
 .vjs-counting .vjs-countdown {
   display: block;
   position:absolute;
@@ -12,7 +16,8 @@
   padding: 0 10px;
   font-size: 1.4em;
 }
-.vjs-countdown .cancel {
+.vjs-countdown .cancel-button .vjs-control-content:before {
   color:red;
   cursor:pointer;
+  content: "✖"
 }
