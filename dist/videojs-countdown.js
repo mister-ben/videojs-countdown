@@ -1,4 +1,4 @@
-/*! videojs-countdown - v0.0.0 - 2015-09-18
+/*! videojs-countdown - v0.0.0 - 2015-10-08
 * Copyright (c) 2015 Ben Clifford; Licensed Apache-2.0 */
 (function(window, videojs) {
   'use strict';
@@ -29,6 +29,9 @@
       setup;
 
     var userAgent = navigator.userAgent;
+    if(userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i) || userAgent.match(/Android/i)) {
+      return;
+    }
 
     if (videojs.VERSION.split('.')[0] >= 5) {
       settings = videojs.mergeOptions(defaults, options);
